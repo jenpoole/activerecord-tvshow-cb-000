@@ -35,5 +35,6 @@ class Show < ActiveRecord::Base
   # returns an array of all of the shows sorted by alphabetical order according to their names
   # hint: use the #order Active Record method
   def self.shows_by_alphabetical_order
+    Show.order("name ASC")
   end
 end
